@@ -14,11 +14,14 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.1",
+    "fs": "0.0.1-security",
     "openzeppelin-solidity": "1.10.0",
-    "truffle-hdwallet-provider": "0.0.5",
+    "papaparse": "^5.3.0",
+    "path": "^0.12.7",
     "zos": "^1.0.0"
   }
 }

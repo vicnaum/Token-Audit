@@ -1,0 +1,21 @@
+{
+  "0": {
+    "TODO": "DOUBLE-CHECK THE MAINNET ADDRESSES MANUALLY ONCE AGAIN"
+  },
+  "1": {
+    "RenderToken": "0x6de037ef9ad2725eb40118bb1702ebb27e4aeb24",
+    "Escrow": "0x6811a4e0652732b89b10262f11f02916c3486272",
+    "TargetAccount": ""
+  },
+  "42": {
+    "LegacyToken": "0x00Cf41c23FAaF002e6414c163D4Fc5Efe5e12BE5",
+    "RenderToken": "0xD799D7abEA01B59421899f7846d00E7461514Eac",
+    "Escrow": "0xeF6dC9E03cC3F00CeBe3885b72144F9f844059E9",
+    "TargetAccount": "0xe47E67ef699869748dD2037B1098D0080B4f2Fb5"
+  },
+  "5777": {
+    "LegacyToken": "0xc4445341F9f6AC8B2a96712Da190B68e4F40aAc2",
+    "RenderToken": "0x4b163890c49D848a60386Abc1Dde8aa1eEbEbb86",
+    "Escrow": "0x615C5eb6Ab62f45397D7256Eedd434Ecb0bb2c7e"
+  }
+}
