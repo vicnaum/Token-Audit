@@ -26,3 +26,5 @@ This will first fetch all the `jobId` balances and save them in `JobIdsWithBalan
 And then it will try to disburse RNDR from each `jobId` to the `TargetAddress` in separate transactions.
 
 If something goes wrong (not high enough gas price or Infura error) - you can run the step 7 again and if will skip the `jobId`'s that have already been disbursed and have `0` balance.
+
+After all the tokens are on the `TargetAddress` (which should be a multisig or Ledger account - well protected) - you can transfer them to the Matic L2 chain using their PoS Bridge - to a similar single address - that will be used as a disbursor to load them up to Matic L2 Escrow using the Stage 2 script.
