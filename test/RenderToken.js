@@ -13,7 +13,7 @@ require('chai')
 const name = "RenderToken";
 const symbol = "RNDR";
 
-contract('Render Token ', (accounts) => {
+contract('Render Token', (accounts) => {
   const owner = accounts[0];
   const childChainManagerProxy = accounts[1];
 

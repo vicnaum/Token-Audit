@@ -14,7 +14,6 @@ interface IEscrow {
  * The token will be minted by the crowdsale contract only
  */
 contract RenderToken is ERC20Upgradeable, OwnableUpgradeable {
-
   // The address of the contract that manages user balances. Address is used for forwarding tokens
   // that come in to fund jobs
   address public escrowContractAddress;

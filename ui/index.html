@@ -1,0 +1,29 @@
+<html>
+<head>
+
+    <title>GSNv2 Test</title>
+
+    <script src="bundle.js">
+    </script>
+
+</head>
+<body>
+    <h2>GSNv2 Test App</h2>
+
+    <script>
+      console.log(window.app)
+      window.app.identifyNetwork().then(function (network) {
+        console.log(`identified network: ${JSON.stringify(network)}`)
+        document.getElementById('transfer_button').disabled = false
+        window.app.listenToEvents()
+      })
+    </script>
+
+    <button id="transfer_button" disabled onClick="window.app.contractCall()">
+        Burn RNDR
+    </button>
+
+<hr>
+<div id="logview"> </div>
+</body>
+</html>
