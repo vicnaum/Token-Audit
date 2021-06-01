@@ -2,16 +2,16 @@ const { deployProxy } = require('@openzeppelin/truffle-upgrades');
 
 const RenderToken = artifacts.require("RenderToken");
 const Escrow = artifacts.require("Escrow");
-const RenderToken_v2 = artifacts.require("RenderToken_v2");
-// const Escrow_v2 = artifacts.require("Escrow_v2");
 
 const name = "RenderToken";
 const symbol = "RNDR";
 
+let { owner, childChainManagerProxy } = require("../config.js");
 
 module.exports = async (deployer, network, accounts) => {
-  const owner = accounts[0]; // Change this to real owner on prod
-  const childChainManagerProxy = accounts[0]; // Change this to real childChainManagerProxy on prod
+  // If owner or childChainManagerProxy aren't set in config.js - set them for the first Truffle account - for testing
+  if (owner == "") owner = accounts[0];
+  if (childChainManagerProxy == "") childChainManagerProxy = accounts[0];
 
   console.log("Deploying RenderToken...");
   await deployProxy(RenderToken, [owner, childChainManagerProxy, name, symbol], { deployer, initializer: 'initialize', unsafeAllow: ['constructor'] });
