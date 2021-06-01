@@ -3,3 +3,7 @@ build
 npm-debug.log
 config.js
 package-lock.json
+yarn.lock
+bundle.js
+yarn-error.log
+.openzeppelin/
